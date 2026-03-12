@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тест JavaScript</title>
+</head>
+<body>
+    <!-- Задача 1 -->
+    <h1 id="title">Привет!</h1>
+    
+    <!-- Задача 2 -->
+    <p>Первый параграф</p>
+    <p>Второй параграф</p>
+    <p>Третий параграф</p>
+    
+    <!-- Задача 3 -->
+    <a>Перейти</a>
+    
+    <!-- Задача 4 и 5 -->
+    <img id="myImage" src="https://via.placeholder.com/150" alt="Пример">
+
+    <script>
+        // Задача 1
+        const title = document.getElementById('title');
+        title.textContent = 'Добро пожаловать!';
+        
+        // Задача 2
+        const paragraphs = document.getElementsByTagName('p');
+        alert(`Количество параграфов: ${paragraphs.length}`);
+        
+        // Задача 3
+        const link = document.querySelector('a');
+        link.href = 'https://google.com';
+        link.target = '_blank';
+        link.textContent = 'Перейти на Google';
+        
+        // Задача 4
+        const firstParagraph = document.querySelector('p');
+        firstParagraph.style.color = 'red';
+        firstParagraph.style.fontSize = '20px';
+        
+        // Задача 5
+        const image = document.getElementById('myImage');
+        image.src = 'https://via.placeholder.com/200';
+    </script>
+</body>
+</html>
